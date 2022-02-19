@@ -18,9 +18,8 @@ defmodule Alphametics do
   @spec solve(puzzle) :: solution | nil
   def solve(_puzzle) do
     puzzle = "I + BB == ILL"
-
-    sides = String.split(puzzle, "==", trim: true)
-    terms = String.split(hd(sides), "+", trim: true) ++ tl(sides)
+    sides = String.split(puzzle, "==")
+    terms = (String.split(hd(sides), "+") ++ tl(sides)) |> Enum.map(&String.trim(&1))
 
     IO.inspect(terms)
   end
