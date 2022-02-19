@@ -19,6 +19,9 @@ defmodule Alphametics do
   def solve(_puzzle) do
     puzzle = "I + BB == ILL"
 
-    String.split(puzzle, "==", trim: true) |> IO.inspect()
+    sides = String.split(puzzle, "==", trim: true)
+    terms = String.split(hd(sides), "+", trim: true) ++ tl(sides)
+
+    IO.inspect(terms)
   end
 end
