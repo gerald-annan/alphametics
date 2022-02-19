@@ -16,6 +16,9 @@ defmodule Alphametics do
     nil
   """
   @spec solve(puzzle) :: solution | nil
-  def solve(puzzle) do
+  def solve(_puzzle) do
+    puzzle = "I + BB == ILL"
+
+    String.split(puzzle, "==", trim: true) |> IO.inspect()
   end
 end
