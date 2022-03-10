@@ -24,7 +24,6 @@ defmodule AlphameticsTest do
     assert Alphametics.solve(puzzle) == nil
   end
 
-  @tag :pending
   test "puzzle with two digits final carry" do
     puzzle = "A + A + A + A + A + A + A + A + A + A + A + B == BCC"
 
