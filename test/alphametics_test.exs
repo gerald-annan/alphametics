@@ -14,7 +14,6 @@ defmodule AlphameticsTest do
     assert Alphametics.solve(puzzle) == solution
   end
 
-  @tag :pending
   test "solution must have unique value for each letter" do
     puzzle = "A == B"
     assert Alphametics.solve(puzzle) == nil
