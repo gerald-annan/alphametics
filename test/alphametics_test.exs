@@ -36,7 +36,6 @@ defmodule AlphameticsTest do
     assert Alphametics.solve(puzzle) == solution
   end
 
-  @tag :pending
   test "puzzle with four letters" do
     puzzle = "AS + A == MOM"
 
