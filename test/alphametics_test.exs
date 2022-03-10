@@ -19,7 +19,6 @@ defmodule AlphameticsTest do
     assert Alphametics.solve(puzzle) == nil
   end
 
-  @tag :pending
   test "leading zero solution is invalid" do
     puzzle = "ACA + DD == BD"
     assert Alphametics.solve(puzzle) == nil
