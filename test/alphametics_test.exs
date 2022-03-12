@@ -1,7 +1,7 @@
 defmodule AlphameticsTest do
   use ExUnit.Case
 
-  # @tag :pending
+  @tag :pending
   test "puzzle with three letters" do
     puzzle = "I + BB == ILL"
 
