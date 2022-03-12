@@ -118,6 +118,7 @@ defmodule AlphameticsTest do
     assert Alphametics.solve(puzzle) == solution
   end
 
+  @tag :pending
   test "puzzle with ten letters and 199 addends" do
     puzzle =
       "THIS + A + FIRE + THEREFORE + FOR + ALL + HISTORIES + I + TELL + A + " <>
