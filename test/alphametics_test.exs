@@ -99,6 +99,7 @@ defmodule AlphameticsTest do
     assert Alphametics.solve(puzzle) == solution
   end
 
+  @tag :pending
   test "puzzle with ten letters" do
     puzzle = "AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE"
 
